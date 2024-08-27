@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+    
+</head>
+<body onkeydown="handleKeydown(event);">
+    <div class="area" id="area">
+        <img src="https://lh3.googleusercontent.com/0zEXvKBUEkXvBFg8Y1Rm3eo8VPFdvr2thx34nG8cPAv00qyxWlk5lM9YITuDqmyPaZsh1f5YFb0oc8lJpi5rVF44=w640-h400-e365-rj-sc0x00ffffff"class="intro" id="intro">    
+        <button class="start" id="start" onclick="startGame();">Press spacebat to  <br> start the game</button>
+
+        
+        
+        <!-- <i class="em em-vampire food" aria-role="presentation" aria-label="VAMPIRE" id="food"></i> -->
+        <i class="em em-zombie food" aria-role="presentation" aria-label="ZOMBIE" id="food"></i>
+        <audio id="eatSound" src="./male-scream-in-fear-123079.mp3" preload="auto"></audio>
+
+       
+        <div id="body">
+        </div>
+
+    </div>
+   <div id="score"></div>
+    <div class="buttons" style=" position:absolute; left: 30%;">
+       
+        <button onclick="changeDirection('left');"  class="button">
+            <span style='font-size:50px; color: black;'>&#11013;</span>
+        </button>
+        <button onclick="changeDirection('down');"  class="button" style="position: absolute; top: 100px;">
+            <span style='font-size:50px; color: black;'>&#11015;</span>
+        </button>
+        
+        <button onclick="changeDirection('up');"  class="button">
+            <span style='font-size:50px; color: black;'>&#11014;</span>  
+        </button>
+        <button onclick="changeDirection('right');"  class="button">
+            <span style='font-size:50px; color:black'>&#11157;</span>
+        </button>
+    </div>
+   
+        
+    <script src="./main.js"></script>
+</body>
+</html>
